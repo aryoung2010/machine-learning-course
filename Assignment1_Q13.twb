@@ -1,0 +1,1279 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook original-version='18.1' source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data (Prescription_Data_Medicaid_2014)' inline='true' name='federated.14n4ll91rmxv7i1bdg8j90ymunzv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Prescription_Data_Medicaid_2014' name='excel-direct.0vfi3rw0gluo4j13i9r7o0ebxh4f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ayoung/Desktop/Duke/Spring 2019/Machine Learning/Prescription_Data_Medicaid_2014.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0vfi3rw0gluo4j13i9r7o0ebxh4f' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:T3363:no:A1:T3363:0' header='yes' outcome='6'>
+            <column datatype='string' name='Drug Name' ordinal='0' />
+            <column datatype='string' name='Generic Name' ordinal='1' />
+            <column datatype='integer' name='Number of Prescribers' ordinal='2' />
+            <column datatype='integer' name='Number of Medicare Part D Claims' ordinal='3' />
+            <column datatype='real' name='Number of Standardized 30-Day Part D Fills' ordinal='4' />
+            <column datatype='real' name='Aggregate Cost Paid for Part D Claims' ordinal='5' />
+            <column datatype='integer' name='Number of Medicare Beneficiaries' ordinal='6' />
+            <column datatype='string' name='GE65 Suppression Flag' ordinal='7' />
+            <column datatype='integer' name='Number of Medicare Part D Claims for Beneficiaries 65+' ordinal='8' />
+            <column datatype='real' name='Number of Standardized 30-Day Part D Fills for Beneficiaries 65+' ordinal='9' />
+            <column datatype='real' name='Aggregate Cost Paid for Part D Claims for Beneficiaries 65+' ordinal='10' />
+            <column datatype='string' name='Beneficiary 65+ Suppression Flag' ordinal='11' />
+            <column datatype='integer' name='Number of Medicare Beneficiaries 65+' ordinal='12' />
+            <column datatype='real' name='Aggregate Cost Share for Beneficiaries with Low Income Subsidy' ordinal='13' />
+            <column datatype='real' name='Aggregate Cost Share for Beneficiaries with No Low Income Subsidy' ordinal='14' />
+            <column datatype='string' name='Opioid Drug Flag' ordinal='15' />
+            <column datatype='string' name='Long-Acting Opioid Drug Flag' ordinal='16' />
+            <column datatype='string' name='Antibiotic Drug Flag' ordinal='17' />
+            <column datatype='string' name='Antipsychotic Drug Flag' ordinal='18' />
+            <column datatype='string' name='Diabetes Related Flag_AY' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Drug Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Drug Name]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Drug Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generic Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Generic Name]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Generic Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Prescribers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Prescribers]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Prescribers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Medicare Part D Claims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Medicare Part D Claims]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Medicare Part D Claims</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Standardized 30-Day Part D Fills</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Standardized 30-Day Part D Fills]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Standardized 30-Day Part D Fills</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Cost Paid for Part D Claims</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Cost Paid for Part D Claims]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Aggregate Cost Paid for Part D Claims</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Medicare Beneficiaries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Medicare Beneficiaries]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Medicare Beneficiaries</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GE65 Suppression Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GE65 Suppression Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>GE65 Suppression Flag</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Medicare Part D Claims for Beneficiaries 65+</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Medicare Part D Claims for Beneficiaries 65+]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Medicare Part D Claims for Beneficiaries 65+</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Standardized 30-Day Part D Fills for Beneficiaries 65+</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Standardized 30-Day Part D Fills for Beneficiaries 65+]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Standardized 30-Day Part D Fills for Beneficiaries 65+</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Cost Paid for Part D Claims for Beneficiaries 65+</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Cost Paid for Part D Claims for Beneficiaries 65+]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Aggregate Cost Paid for Part D Claims for Beneficiaries 65+</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beneficiary 65+ Suppression Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Beneficiary 65+ Suppression Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Beneficiary 65+ Suppression Flag</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Medicare Beneficiaries 65+</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Medicare Beneficiaries 65+]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Number of Medicare Beneficiaries 65+</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Cost Share for Beneficiaries with Low Income Subsidy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Cost Share for Beneficiaries with Low Income Subsidy]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Aggregate Cost Share for Beneficiaries with Low Income Subsidy</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Cost Share for Beneficiaries with No Low Income Subsidy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Aggregate Cost Share for Beneficiaries with No Low Income Subsidy</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opioid Drug Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Opioid Drug Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Opioid Drug Flag</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long-Acting Opioid Drug Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Long-Acting Opioid Drug Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Long-Acting Opioid Drug Flag</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Antibiotic Drug Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Antibiotic Drug Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Antibiotic Drug Flag</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Antipsychotic Drug Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Antipsychotic Drug Flag]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Antipsychotic Drug Flag</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes Related Flag_AY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Diabetes Related Flag_AY]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Diabetes Related Flag_AY</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T3363:no:A1:T3363:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[Antipsychotic Drug Flag]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Diabetes Related Flag_AY]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Opioid Drug Flag]' role='dimension' type='nominal' />
+      <group name='[Antipsychotic Group]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='member' level='[Antipsychotic Drug Flag]' member='&quot;Y&quot;' />
+      </group>
+      <group name='[Diabetes Group]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='member' level='[Diabetes Related Flag_AY]' member='&quot;Y&quot;' />
+      </group>
+      <group caption='Opioid Group' name='[Set 1]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='member' level='[Opioid Drug Flag]' member='&quot;Y&quot;' />
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.402299' group-percentage='0.112069' measure-ordering='alphabetic' measure-percentage='0.485632' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Antipsychotic Group]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>(&quot;Y&quot;)</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Antipsychotic Drugs&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Prescription_Data_Medicaid_2014)' name='federated.14n4ll91rmxv7i1bdg8j90ymunzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14n4ll91rmxv7i1bdg8j90ymunzv'>
+            <column datatype='real' name='[Aggregate Cost Paid for Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Antipsychotic Drug Flag]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Medicare Beneficiaries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Medicare Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Prescribers]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[Number of Standardized 30-Day Part D Fills]' role='measure' type='quantitative' />
+            <column-instance column='[Aggregate Cost Paid for Part D Claims]' derivation='Sum' name='[sum:Aggregate Cost Paid for Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' derivation='Sum' name='[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Beneficiaries]' derivation='Sum' name='[sum:Number of Medicare Beneficiaries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Part D Claims]' derivation='Sum' name='[sum:Number of Medicare Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Prescribers]' derivation='Sum' name='[sum:Number of Prescribers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Standardized 30-Day Part D Fills]' derivation='Sum' name='[sum:Number of Standardized 30-Day Part D Fills:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Antipsychotic Group]' />
+          <slices>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</column>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Antipsychotic Group]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Antipsychotic Group]</rows>
+        <cols>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Diabetes Drugs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Prescription_Data_Medicaid_2014)' name='federated.14n4ll91rmxv7i1bdg8j90ymunzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14n4ll91rmxv7i1bdg8j90ymunzv'>
+            <column datatype='real' name='[Aggregate Cost Paid for Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Diabetes Related Flag_AY]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Medicare Beneficiaries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Medicare Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Prescribers]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[Number of Standardized 30-Day Part D Fills]' role='measure' type='quantitative' />
+            <column-instance column='[Aggregate Cost Paid for Part D Claims]' derivation='Sum' name='[sum:Aggregate Cost Paid for Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' derivation='Sum' name='[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Beneficiaries]' derivation='Sum' name='[sum:Number of Medicare Beneficiaries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Part D Claims]' derivation='Sum' name='[sum:Number of Medicare Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Prescribers]' derivation='Sum' name='[sum:Number of Prescribers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Standardized 30-Day Part D Fills]' derivation='Sum' name='[sum:Number of Standardized 30-Day Part D Fills:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]' />
+          <slices>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</column>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]</rows>
+        <cols>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 1 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Opioid Drugs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Prescription_Data_Medicaid_2014)' name='federated.14n4ll91rmxv7i1bdg8j90ymunzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14n4ll91rmxv7i1bdg8j90ymunzv'>
+            <column datatype='real' name='[Aggregate Cost Paid for Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Medicare Beneficiaries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Medicare Part D Claims]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Prescribers]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='real' name='[Number of Standardized 30-Day Part D Fills]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Opioid Drug Flag]' role='dimension' type='nominal' />
+            <column-instance column='[Aggregate Cost Paid for Part D Claims]' derivation='Sum' name='[sum:Aggregate Cost Paid for Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aggregate Cost Share for Beneficiaries with No Low Income Subsidy]' derivation='Sum' name='[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Beneficiaries]' derivation='Sum' name='[sum:Number of Medicare Beneficiaries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Medicare Part D Claims]' derivation='Sum' name='[sum:Number of Medicare Part D Claims:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Prescribers]' derivation='Sum' name='[sum:Number of Prescribers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Standardized 30-Day Part D Fills]' derivation='Sum' name='[sum:Number of Standardized 30-Day Part D Fills:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Paid for Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Aggregate Cost Share for Beneficiaries with No Low Income Subsidy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Beneficiaries:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Medicare Part D Claims:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Standardized 30-Day Part D Fills:qk]&quot;</bucket>
+              <bucket>&quot;[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[sum:Number of Prescribers:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]' />
+          <slices>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</column>
+            <column>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]</rows>
+        <cols>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='24500' id='1' name='Sheet 1' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24500' id='3' name='Sheet 1 (3)' w='98400' x='800' y='25500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='4' name='Sheet 1 (2)' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Antipsychotic Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Diabetes Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Set 1:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Antipsychotic Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Diabetes Related Flag_AY:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Drug Name:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Long-Acting Opioid Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Opioid Drug Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0EA0F9B0-48BD-4972-A652-29BE1947AA42}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Antipsychotic Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Diabetes Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Set 1:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Antipsychotic Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Diabetes Related Flag_AY:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Drug Name:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Long-Acting Opioid Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Opioid Drug Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CC1B9AA-5D16-484E-9661-917539178D2A}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[:Measure Names]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Diabetes Group]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Set 1]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Antipsychotic Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Diabetes Group:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[io:Set 1:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Antipsychotic Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Diabetes Related Flag_AY:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Drug Name:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Long-Acting Opioid Drug Flag:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Opioid Drug Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57347A65-89FF-4B5E-8F10-738B90678644}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[Antipsychotic Group]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Drug Name:nk]</field>
+            <field>[federated.14n4ll91rmxv7i1bdg8j90ymunzv].[none:Opioid Drug Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D8677223-DC55-4207-BBC6-FE3089092BA1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 1 (2)' />
+        <viewpoint name='Sheet 1 (3)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{1C2027E5-970B-46D2-9898-878123C35182}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='65' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAABBCAYAAACHMKt6AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAPUUlEQVR4nO2ce1SVZb7HPwMiCQpz8oIuazQvY17GPGe/IEpeQMPLoLmR5RW1rFFEOXYc
+      Mc2TJCaZFbIyHTMvYJ0u5mVB5FgSCZWA4IpAcDS8wOQCXKJy2cTt3b/zB0hsAUUscWY/n7X2
+      Yq3n8n1+v4f93e/zPPt99+9ERFAorBSbtg5AoWhLlAEUVo0ygMKqUQZQWDXKAAqrRhlAYdUo
+      AyisGmUAhVWjDKCwapQBFFaNMoDCqlEGUFg1ygAKq0YZQGHVKAMorBplAIVVowygsGqUARRW
+      jTKAwqpRBlBYNcoACqtGGUBh1SgDKKwaZQCFVaMMoLBqlAEUVo0ygMKqUQZQWDXKAAqrRhlA
+      YdUoAyisGmWAtuTUG4zTNDRtBK8k6m0dzb8G+jXSP1nHQu9RaJrGCC8/AiMSKWylnDJAG3Iq
+      /ijFE9axbkw136Skt3U4vxm5UXPRtFdIvHclYl6YzZJ9OtN2fkFKWhrfxr6JsfQc51upqAzQ
+      ZmSTnFiM63954DHSleKj8Zxq65AecEr+/javJXUhYPtGpvZ2wBawdejNUy8/z8hWaioDtBXZ
+      X3M0fwDuWmc6DxxCj+JEkrNvbVRCxifrmOc1Ak3TGGUMJCJiFRNeafBZqucTHxGIcVTtUspr
+      3jp2bFjAgqjc2vrcKOZqGq8kAiWJhBlHoc2NIvemflQwfjf1vRcSFp9Pw8WYnh9PRKCRUZqG
+      NsKLeet2sGHBAm7KU5hIROAsvEdpaJqGNsqbhWHx5OsAuUTN1Zi+9SwQywqtrk19/Dr58WEW
+      y5ngqAxKmpywIo7FJFA9xh+/XreZ18p/cixsYV08tfMR82Ol5XzV12sgijbhUuQcMfi8I1ki
+      IpImm70MYtxx1rLNB/PF3X2+vHOyUCpEpMaUKdtmGMQQklDXoky+C/UWg3ewRF80SY2IVJTE
+      yIsGg8yJvHRzIJljMEhIwiX5YP6TMvkva+XVnd/K1Zv6xtckobBCRGqk6PsImWPwls1pNXXy
+      30mot0G8g6PloqlGRCqkJOZFMRjmyE15+f4j2RJ9WvJNNSJSI6as3TLf3SDPfVxgmashRBLE
+      krLvQsXbK0D+L6su9rxDssLLXQIOFEhjEiSkYV5NUiAHAtzFff478n1RjUiNSbJ2187hB3Xd
+      rh4IEIPXS3KkLmd1BWgTcjn+5VmcR7szCIBhDB9lR15iErn1bU6xf08WPZ5Zy1LXbtgDtg6d
+      cGzXQKboKO9Hl+D115D6JYF9J2ceamLE69H7yJ61n5idr7L2Lx50rtP3WhbM6G72gC0PD3se
+      /zFFHI1Pr5N/n+gSL/4aMpXeDraAPZ2cb1EfNosXpg6mu4MtYIvDoJnMGgnpZ87eYQ6KOPp+
+      NL+fG8ycQXWxP2rkOd8upMZ9S9HdTGf9lO1je2oPnlm7lGEP24KtA4MWhhLQJ4s9+2sXmGVl
+      JeDQjZ6da3Nud3tFxW9CURrJZ2GY/+N1BbYM/tMwiP2G5MIF9HIBck+TXgxDB/6xeZ2sTFLp
+      Q9AAxzsOeXXwXMIn9cD2ZsHlf3C6GLJWDeeLWxv7mOrkU6FPELeV1/OJ37qBnUcyybn2cwON
+      O0V0lux0OJ86A237LVUDyigDOt9J4hYu/+M0xQzFcsp68Vh/KE4/TS4Geo2dyhO73mDxU2l4
+      zJiiDNAWFB2PIxXg5TFoL1vWHf+2iJnT7/Zff2f69+vzy5sfoKaGGmDC5hQ2etk20+tO6JwK
+      f4ZVcU+wbucX/LnuKpT4isaKO/atQa+GvoH7+WRhnxaMNZg/uUJsRjYmenFnyzdDr5nsjptM
+      Tubfifv4M7UJvv+YOHkiFTufcFLS0kirf33BGldIPXESE0CXbnQHfsq/zQl3l670oID8wlZ8
+      h9CrP4/bQfLJUzTXu0vXHlCQT/PyP3E6vYi+MwPql2Atpy/9B8P5E6ktPMPvzJPjXbFL+IAD
+      uU236Pn4EJzJ4My5hqXnOJMBzsOGUL93tu9EP20GAW++rwxw3zElEpcAI4cbbnnDdEZzHwAJ
+      cSSaAMfRPO3jTPqet4j5ZyVQyZXUr0guaNBlkA9+A4qJ3raD9Gs66OVcOhZPRosCGc50/z9Q
+      fOBl1sRcolwH9HIKsmII25tSJ+/HgOJotu1Ip1b+EsfiG6p3oUdPO85/FcePlaCXF5AaFcyW
+      ryxH6jVkGM4kER9/DR2orKwEejJl1hjs0iNYtS2VK5UAlZTmfMO7W2O53ETELtNX88ITeewI
+      XEvMpfJardIcjm3YxQkAw3wCXfOJ3Litfj6y92wkMn8wC2cYADixdRERx3IorQTQlQHuN/qp
+      FE7gyki3xhfxXq4j6cEJUk7pgCOj1+wgeOiPvGH0QBs1izey/4P+XSx64L/1bWaaD7LEezgj
+      nlrMh/TlNruGBtgyaGkke4KGciFiNqOHa2hjp/HCtgsMeXJgnbw/W9+eifngEryHj+CpxR9C
+      34bqjoz7n3X8ufx9ZntojJ0bynePriBo3C1DGRazJWgoP4R4M1wbwaS3azfZTpM2c2jzFGyj
+      VzDZQ0MbMYlZYcd4SDPQvcmYezFzZzR/m1HFh4smMFzTGPv0ag53+iN9AXBhesR+QgecYtXT
+      w9GGj2PZ171Ys28nc+s+/odM9IHDq3l6rIamDVfHoP9anJfdMwzi805W801qvpKXDAZZcaTs
+      N4mg5quXxGBYIb+R/H1HXQEeWC4Tu/VdvskppfZqXc6lmB18cv4P+Dw1qK5NCnvDYsgqqF0O
+      UHmF1B1RxNt5MWF0q7eJv5Cyl7CYLArKazcBlVdS2REVj53XBH4N+QcBdQr0wPJ7Bvf7mTf+
+      dzov5VzjZ+xw6v2fzHh7F8/Xr0J6M6Tn57z1XARnCkuopgMPD/Vkzb61eP8ab9DeQ+j5+Vs8
+      F3GGwpJq6PAwQz3XsG+td+tPYR4wfici0tZBKBRthVoCKayaOy6B0tLS7kccCkWboJZACqtG
+      LYEUVo0ygMKqUQZQWDWtNIDO5U+WMELz5d1zt9ad411fjXFr45t5skeheHBopQFs6ekXhP8f
+      8ojc9WXt3Yt1mL7cRWS+K4H/7YXTrxKidWI2mzlx4gR+fn64ubnh4eHBpk2bqKiouG2f2NhY
+      jEYjbm5ujBgxguDgYG7cuGHRrrS0lLCwMDw8PHBzc8PPz6/RaV9ycjK+vr5omoavry/Jycl3
+      FXtYWBiaphEXF2dRd+HCBRYsWICbmxtubm4sWLCACxcu3HPuLcmrqqqKXbt24eXlhaZpeHl5
+      3du9QGUJIeJlMMovT/Jdksg5BjG+kyU193aLhtXz+eefy9y5cyU7O1t0XZfi4mI5cuSIFBUV
+      Ndvn9ddfl6VLl8rZs2dF13UxmUwSHh4uK1eulOrqahERKS4uloCAANm+fbuYTCbRdV2ys7Ml
+      MTGxXiczM1OmTp0qKSkpouu6pKSkyNSpUyUzM7NFsScnJ0tQUJAsW7ZMjh07Vl9+8eJFMRqN
+      cujQIamqqpKqqio5dOiQGI1GuXjx4j3lfqe8dF2X8PBwWbp0qeTm5oqISG5urtzjzXB1z2AG
+      fyFlUmcIrxBJ+De5UaqtKC4ulmXLlsnZs2fv3LgB586dE13XLcoKCwvl2WeflcLCQhERiY6O
+      lo0bNzZqdxNd1yU0NFQOHjxoUX7w4EEJDQ1ttt9Nrl27JosXL5bMzEx58cUXLQxw+PBhWb9+
+      vYWGruuyfv16OXz4sIi0Pvc75XXjxg1ZtGiRnDlzxqL8HjfBLkwL8qdH/A4+OJfLgXdjeWzR
+      kn+bG6XaioyMDOzt7enTpyVPSv1C//79sbGx/JeWlZXx0EMPYW9vT2VlJV9//TXjx49v1O4m
+      paWlFBYW1v5iQgM0TaOwsJDS0tJmxzebzURFRaFpGkOGDGlU7+Dg0OQypqKiAgcHB6B1ubck
+      r3bt2mFnZ0dVVZVF+T2fAtkOeoYXfIqJDFrEvqszWeLncq+SVk9eXh7Ozs68+eab9evVSZMm
+      ERsbi9lsbrHOlStXeO211/Dx8cHZ2RmTyUR5eTk5OTnMmzevfp+wYsUKrly5AtS+mcxmMx07
+      drTQ6tixI2azue5hlqb54YcfuHTpErNnz26y3t3dnevXr7N//36qq6uprq5m//79XL9+HXd3
+      91bn3pK8HB0dmTx5Mlu3biUvL69+rF/hblBHRj87nz6xW+kfHoyhtY+XKuopKyujc+fOBAYG
+      snr16vrymJgYQkJC2LBhQ7N9Kyoq2LJlC2fOnGHjxo2899579XU1NTVUVlYyduxY5syZU19e
+      UlLCqlWrCAoKomvXrncdr9lsZvfu3Tg6OhIREdFsu5KSEqqrq3Fx+eVD0sXFherqakpKSnBy
+      cmpV7i3Ja+DAgRQUFNC1a1c6dOgAQIcOHdT3AA8i/fr1Iycnh5qaGovy3r17A6DrTT+kW1VV
+      RVhYGI6OjuzatYtHH33Uor5jx444Ojry008/WZQ7OTnRvXt3KioqsLe3x8bGhrKyMos2ZWVl
+      2NjYYG9v32jcq1ev8tlnnxEeHl77w1d1r7i4OFavXs2YMWPIyMggMjKSiRMn4unpiZ2dHXZ2
+      dnh6ejJx4kQiIyNbnXtL8jp//jwpKSmsXLmy3uRdu3ZVBngQ6devH5cvXyYnJ8ei/MKFC9jb
+      22Nr2/RlNjY2FoCAgADat2/fqN7BwYEBAwZw9OhRi+VEcXExhYWFODk50alTJ1xcXBodi6al
+      peHi4kKnTp0a6Xbr1o2YmJgGD/jXvsaPH8+mTZtISEhg6NChVFRU0K5d40VHu3bt6vcGrcm9
+      JXlVVVUhIo36KwM8gDzyyCOMGzeO0NBQLl68iNls5vTp03z66adMmzatyT6VlZUkJSXh5+fX
+      5Jv/Jr6+vpw+fZrIyEiqq6spLy9nz5499OjRg8ceewwbGxuMRiNRUVGcPHkSs9nMyZMniYqK
+      wmg0NrvJbAne3t7s3buXxMREzGYzZrOZxMRE9u7di7e3d6tzb0leffr0oX379mzZsoXr168D
+      1P69q7MmxX1D13X56KOPZPz48WIwGMRoNEpSUlJ9fXl5uSxevFg+/vhjEak97pwyZYoYDIZG
+      r0mTJtUfg4qI5OXlSWBgoLi6uoq7u7u8+uqrYjKZLMZPSkoSo9HY5NgiIsePH5fZs2ff9mz+
+      1mNQXdclKSlJ/P39xdXVVVxdXcXf31+SkpIaHY3eTe4tzaukpEQ2b94snp6eYjAYxNPT816/
+      B1C0FQkJCbJ8+XIpLy+/72OXl5fL8uXLJSHh1l/7vD/8mrn/P3YJtH0ZvWQ4AAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='65' name='Sheet 1 (2)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='65' name='Sheet 1 (3)' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
